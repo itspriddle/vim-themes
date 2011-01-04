@@ -186,15 +186,17 @@ hi javaDocSeeTag              guifg=#CCCCCC     guibg=NONE        gui=NONE      
 
 
 " Special for XML
-hi link xmlTag          Keyword 
-hi link xmlTagName      Conditional 
-hi link xmlEndTag       Identifier 
+hi link xmlTag          Keyword
+hi link xmlTagName      Keyword
+"hi link xmlEndTag       Identifier
+hi link xmlEndTag       Keyword
 
 
-" Special for HTML
-hi link htmlTag         Keyword 
-hi link htmlTagName     Conditional 
-hi link htmlEndTag      Identifier 
+" Special for "HTML
+hi link htmlTag         Keyword
+hi link htmlTagName     Keyword
+"hi link htmlEndTag      Identifier
+hi link htmlEndTag      Keyword
 
 
 " Special for Javascript
