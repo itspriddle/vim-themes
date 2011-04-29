@@ -1,133 +1,118 @@
 " Vim color file
-" Maintainer:    Roman Gonzalez <romanandnreg at gmail dot com>
-" Last Change:   2009 Aug 11
-" Version:       0.0.1
-" URL:           http://blog.romanandreg.com
-
-" For now this will only work on gvim
+" Converted from Textmate theme Sunburst using Coloration v0.2.5 (http://github.com/sickill/coloration)
+"
+" Edited by Joshua Priddle <jpriddle@nevercraft.net>
 
 set background=dark
 highlight clear
+
 if exists("syntax_on")
   syntax reset
 endif
 
-let g:colors_name = "sunburst"
+let g:colors_name = "Sunburst"
 
-"if has("gui_running")
+" Standard colors
+hi Cursor       guifg=NONE    guibg=#a7a7a7 gui=NONE
+hi Visual       guifg=NONE    guibg=#2c3033 gui=NONE
+hi CursorLine   guifg=NONE    guibg=#1a1a1a gui=NONE
+hi CursorColumn guifg=NONE    guibg=#1a1a1a gui=NONE
+hi LineNr       guifg=#7c7c7c guibg=#000000 gui=NONE
+hi VertSplit    guifg=#2f2f2f guibg=#2f2f2f gui=NONE
+hi MatchParen   guifg=#e28964 guibg=NONE    gui=NONE
+hi StatusLine   guifg=#f8f8f8 guibg=#2f2f2f gui=bold
+hi StatusLineNC guifg=#f8f8f8 guibg=#2f2f2f gui=NONE
+hi Pmenu        guifg=#89bdff guibg=#1a1a1a gui=NONE
+hi PmenuSel     guifg=NONE    guibg=#2c3033 gui=NONE
+hi IncSearch    guifg=NONE    guibg=#142d4b gui=NONE
+hi Search       guifg=NONE    guibg=#142d4b gui=NONE
+hi Directory    guifg=#3387cc guibg=NONE    gui=NONE
+hi Folded       guifg=#aeaeae guibg=#000000 gui=NONE
+hi Normal       guifg=#f8f8f8 guibg=#000000 gui=NONE
+hi Boolean      guifg=#3387cc guibg=NONE    gui=NONE
+hi Character    guifg=#3387cc guibg=NONE    gui=NONE
+hi Comment      guifg=#aeaeae guibg=NONE    gui=italic
+hi Conditional  guifg=#e28964 guibg=NONE    gui=NONE
+hi Constant     guifg=#3387cc guibg=NONE    gui=NONE
+hi Define       guifg=#e28964 guibg=NONE    gui=NONE
+hi ErrorMsg     guifg=NONE    guibg=NONE    gui=NONE
+hi WarningMsg   guifg=NONE    guibg=NONE    gui=NONE
+hi Float        guifg=#3387cc guibg=NONE    gui=NONE
+hi Function     guifg=#89bdff guibg=NONE    gui=NONE
+hi Identifier   guifg=#99cf50 guibg=NONE    gui=NONE
+hi Keyword      guifg=#e28964 guibg=NONE    gui=NONE
+"hi Label        guifg=#65b042 guibg=NONE    gui=NONE
+hi Label        guifg=#e28964 guibg=NONE    gui=NONE
+hi NonText      guifg=#2e343a guibg=#000000 gui=NONE
+hi Number       guifg=#3387cc guibg=NONE    gui=NONE
+hi Operator     guifg=#e28964 guibg=NONE    gui=NONE
+hi PreProc      guifg=#e28964 guibg=NONE    gui=NONE
+hi Special      guifg=#f8f8f8 guibg=NONE    gui=NONE
+hi SpecialKey   guifg=#2e343a guibg=#1a1a1a gui=NONE
+hi Statement    guifg=#e28964 guibg=NONE    gui=NONE
+hi StorageClass guifg=#99cf50 guibg=NONE    gui=NONE
+hi String       guifg=#65b042 guibg=NONE    gui=NONE
+hi Tag          guifg=#89bdff guibg=NONE    gui=NONE
+hi Title        guifg=#f8f8f8 guibg=NONE    gui=bold
+hi Todo         guifg=#aeaeae guibg=NONE    gui=inverse,bold,italic
+hi Type         guifg=#89bdff guibg=NONE    gui=NONE
+hi Underlined   guifg=NONE    guibg=NONE    gui=underline
 
-  highlight lineNr    guifg=#888888 guibg=#DEDEDE ctermbg=248 ctermfg=240
-  highlight VertSplit guifg=#DEDEDE guibg=#888888 ctermbg=240 ctermfg=248
-  highlight IncSearch guibg=#16181A
-  highlight Cursor    guibg=#DDDDDD ctermbg=240 ctermbg=240
-  highlight Search    guibg=#16181A guifg=NONE
-  highlight MatchParen guibg=#16181A guifg=#CE864B
-  highlight Folded    guibg=#16181A guifg=NONE
- 
-  " Some defaults for all languages
-  highlight Normal    guifg=White   guibg=Black ctermfg=255 ctermbg=black
-  highlight Include   guifg=#CE864B guibg=Black ctermfg=136
-  highlight Identifier guifg=#3387CC guibg=Black ctermfg=33 
-  highlight Keyword   guifg=#CE864B guibg=Black ctermfg=136
-  highlight Define    guifg=#CE864B guibg=Black ctermfg=136
-  highlight Statement guifg=#CE864B guibg=Black ctermfg=136
-  highlight Function guifg=#89BDFF guibg=Black ctermfg=75
-  highlight Comment guifg=#AEAEAE guibg=Black gui=italic ctermfg=246
+" Ruby
+hi rubyClass                    guifg=#e28964 guibg=NONE gui=NONE
+hi rubyFunction                 guifg=#89bdff guibg=NONE gui=NONE
+hi rubyInterpolationDelimiter   guifg=NONE    guibg=NONE gui=NONE
+hi rubySymbol                   guifg=#3387cc guibg=NONE gui=NONE
+hi rubyConstant                 guifg=#9b859d guibg=NONE gui=NONE
+hi rubyStringDelimiter          guifg=#65b042 guibg=NONE gui=NONE
+hi rubyBlockParameter           guifg=#3e87e3 guibg=NONE gui=NONE
+hi rubyInstanceVariable         guifg=#3e87e3 guibg=NONE gui=NONE
+hi rubyInclude                  guifg=#e28964 guibg=NONE gui=NONE
+hi rubyGlobalVariable           guifg=#3e87e3 guibg=NONE gui=NONE
+hi rubyRegexp                   guifg=#e9c062 guibg=NONE gui=NONE
+hi rubyRegexpSpecial            guifg=#e9c062 guibg=NONE gui=NONE
+hi rubyRegexpDelimiter          guifg=#e9c062 guibg=NONE gui=NONE
+hi rubyEscape                   guifg=#3387cc guibg=NONE gui=NONE
+hi rubyControl                  guifg=#e28964 guibg=NONE gui=NONE
+hi rubyClassVariable            guifg=#3e87e3 guibg=NONE gui=NONE
+hi rubyOperator                 guifg=#e28964 guibg=NONE gui=NONE
+hi rubyException                guifg=#e28964 guibg=NONE gui=NONE
+hi rubyPseudoVariable           guifg=#3e87e3 guibg=NONE gui=NONE
+hi rubyRailsUserClass           guifg=#9b859d guibg=NONE gui=NONE
+hi rubyRailsARAssociationMethod guifg=#dad085 guibg=NONE gui=NONE
+hi rubyRailsARMethod            guifg=#dad085 guibg=NONE gui=NONE
+hi rubyRailsRenderMethod        guifg=#dad085 guibg=NONE gui=NONE
+hi rubyRailsMethod              guifg=#dad085 guibg=NONE gui=NONE
 
-  highlight SpecialComment guifg=#AEAEAE guibg=Black gui=bold
-  highlight Type    guifg=White gui=NONE
-  highlight Constant   guifg=#3387CC guibg=Black ctermfg=33
-  highlight String     guifg=#65B042 guibg=Black ctermfg=112
-  highlight Title      guifg=#FFFFFF guibg=Black
-  highlight Todo       guifg=#FFFFFF guibg=Black gui=underline
-  highlight Structure  guifg=#CE864B guibg=Black
-  highlight Delimiter  guifg=#FFFFFF guibg=Black
- 
-  " HTML
-  highlight htmlTag guifg=#80BDF7 guibg=Black
-  highlight htmlEndTag guifg=#80BDF7 guibg=Black
-  highlight htmlTagName guifg=#80BDF7 guibg=Black
-  highlight htmlArg guifg=#80BDF7 guibg=Black 
+" ERB
+hi erubyDelimiter               guifg=#ffffff guibg=NONE gui=NONE
+hi erubyComment                 guifg=#aeaeae guibg=NONE gui=italic
+hi erubyRailsMethod             guifg=#dad085 guibg=NONE gui=NONE
 
-  " Ruby specific highlight
-  highlight rubyClass guifg=#CE864B guibg=Black ctermfg=136
-  highlight rubyInterpolationDelimiter guifg=#DAEFA0 guibg=Black ctermfg=114
-  highlight rubySymbol guifg=#3387CC guibg=Black ctermfg=33 ctermbg=Black
-  highlight rubyConstant guifg=#3387CC guibg=Black ctermfg=33
-  highlight rubyStringDelimiter guifg=#65B042 guibg=Black ctermfg=112
-  highlight rubyBlockParameter guifg=#3387CC guibg=Black ctermfg=33
-  highlight rubyInstanceVariable guifg=#3387CC guibg=Black
-  highlight rubyInclude guifg=#CE864B guibg=Black ctermfg=136
-  highlight rubyGlobalVariable guifg=#3387CC guibg=Black
-  highlight rubyEval guifg=#DAD085 guibg=Black
-  highlight rubyRegexp guifg=#E9B750 guibg=Black ctermfg=179
-  highlight rubyRegexpDelimiter guifg=#E9B750 guibg=Black ctermfg=179
+" YAML
+hi yamlKey            guifg=#89bdff guibg=NONE gui=NONE
+hi yamlAnchor         guifg=#3e87e3 guibg=NONE gui=NONE
+hi yamlAlias          guifg=#3e87e3 guibg=NONE gui=NONE
+hi yamlDocumentHeader guifg=#65b042 guibg=NONE gui=NONE
 
-  " Rails specific highlight
-  highlight rubyRailsMethod guifg=#DAD085 guibg=Black
-  highlight rubyRailsUserClass guifg=#89BDFF guibg=Black gui=underline
-  highlight railsConditionsSpecial guifg=#DAEFA0 guibg=Black
-  highlight railsOrderSpecial guifg=#DAEFA0 guibg=Black
+" HTML
+hi htmlTag         guifg=#89bdff guibg=NONE gui=NONE
+hi htmlEndTag      guifg=#89bdff guibg=NONE gui=NONE
+hi htmlTagName     guifg=#89bdff guibg=NONE gui=NONE
+hi htmlArg         guifg=#89bdff guibg=NONE gui=NONE
+hi htmlSpecialChar guifg=#3387cc guibg=NONE gui=NONE
 
-  " Rails: erb
-  highlight erubyDelimiter guifg=#FFFFFF guibg=Black
-  highlight erubyRailsRenderMethod guifg=#DAD085 guibg=Black
-  highlight erubyRailsHelperMethod guifg=#DAD085 guibg=Black
-  highlight javascriptRailsFunction guifg=#CE864B guibg=Black
-   
-  " Rails: haml
-  highlight hamlTag guifg=#80BDF7 guibg=Black
-  highlight hamlClassChar guifg=#DAEFA0 guibg=Black
-  highlight hamlClass guifg=#DAEFA0 guibg=Black
-  highlight hamlIdChar guifg=#DAD085 guibg=Black
-  highlight hamlId guifg=#DAD085 guibg=Black
-  highlight hamlAttributesDelimiter guifg=#FFFFFF guibg=Black
-  highlight hamlRubyOutputChar guifg=#FFFFFF guibg=Black
-  highlight hamlObjectDelimiter guifg=#FFFFFF guibg=Black
+" Javascript
+hi javaScriptFunction      guifg=#99cf50 guibg=NONE gui=NONE
+hi javaScriptRailsFunction guifg=#dad085 guibg=NONE gui=NONE
+hi javaScriptBraces        guifg=NONE    guibg=NONE gui=NONE
 
-  " Javascript specific highlight
-  highlight javaScript guifg=#FFFFFF guibg=Black
-  highlight javaScriptIdentifier guifg=#3387CC guibg=Black
-  highlight javaScriptCommentTodo guifg=#AEAEAE guibg=NONE
-  highlight javaScriptBraces guifg=#FFFFFF guibg=Black
-  highlight javaScriptFunction guifg=#99C843 guibg=Black
-  highlight javaScriptType guifg=#94859D guibg=Black
-  highlight javaScriptMember guifg=#94859D guibg=Black
-  highlight javaScriptGlobal guifg=#94859D guibg=Black
-  highlight javaScriptRegexpString guifg=#E1C062 guibg=Black
-  highlight javaScriptNumber guifg=#3387CC guibg=Black ctermfg=33 ctermbg=Black
-
-  " Haskell Colors
-  highlight hsImport guifg=#CE864B guibg=Black gui=bold
-  highlight hsTypedef guifg=#CE864B guibg=Black gui=bold
-  highlight hsStructure guifg=#CE864B guibg=Black gui=bold
-  highlight hsCharacter guifg=#65B042 guibg=Black
-  highlight hsType guifg=#89BDFF guibg=Black
-  highlight ConId guifg=#3387CC guibg=Black
-
-  " Java Colors
-  highlight javaClassDecl guifg=#CE864B guibg=Black
-  highlight javaType guifg=#3387CC guibg=Black
-  highlight javaScopeDecl guifg=#DAD085 guibg=Black
-  highlight javaStorageClass guifg=#DAD085 guibg=Black
-
-  " LaTeX highlight
-  highlight texInputFile guifg=#F14149 guibg=Black
-  highlight texStatement guifg=#80BDF7 guibg=Black
-  highlight texMathDelim guifg=#80BDF7 guibg=Black
-  highlight texSpecialChar guifg=#80BDF7 guibg=Black
-  highlight texTypeSize guifg=#65B042 guibg=Black
-  highlight texTypeStyle guifg=#65B042 guibg=Black
-  highlight texMathMatcher guifg=#3387CC guibg=Black 
-  highlight texMathOper guifg=#DAD085 guibg=Black 
-  highlight texMathZoneE guifg=#3387CC guibg=Black 
-  highlight texMathZoneA guifg=#3387CC guibg=Black 
-  highlight texMathZoneX guifg=#3387CC guibg=Black 
-  highlight texMathZoneJ guifg=#3387CC guibg=Black 
-  highlight texSection guifg=#F14149 guibg=Black
-  highlight texSectionName guifg=#DAD085 guibg=Black
-  highlight texRefZone guifg=#DAD085 guibg=Black
-  highlight texStatement guifg=#80BDF7 guibg=Black
-  highlight texZone guifg=#80BDF7 guibg=Black
-
-"endif
+" CSS
+hi cssURL           guifg=#3e87e3 guibg=NONE gui=NONE
+hi cssFunctionName  guifg=#dad085 guibg=NONE gui=NONE
+hi cssColor         guifg=#3387cc guibg=NONE gui=NONE
+hi cssPseudoClassId guifg=#89bdff guibg=NONE gui=NONE
+hi cssClassName     guifg=#89bdff guibg=NONE gui=NONE
+hi cssValueLength   guifg=#3387cc guibg=NONE gui=NONE
+hi cssCommonAttr    guifg=#cf6a4c guibg=NONE gui=NONE
+hi cssBraces        guifg=NONE    guibg=NONE gui=NONE
